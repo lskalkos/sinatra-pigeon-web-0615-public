@@ -4,6 +4,14 @@
   
   <!-- show a table that lists all pigeons here -->
 
+  <table>
+  <% @pigeons.each do |pigeon|  %>
+  <tr>
+    <td><%= pigeon.name %></td>
+  </tr>
+  <% end %>
+  </table>
+
   <a class="button" href="/pigeons/new">New Pigeon</a>
   
 <%= erb :'layouts/_footer' %>
